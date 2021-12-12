@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/swiss/village/registery/version"
+require_relative "lib/swiss_village_registery/version"
 
 Gem::Specification.new do |spec|
   spec.name = "swiss-village-registery"
-  spec.version = Swiss::Village::Registery::VERSION
+  spec.version = SwissVillageRegistery::VERSION
   spec.authors = ["Liberatys"]
   spec.email = ["nick.flueckiger@renuo.ch"]
 
@@ -26,4 +26,7 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.extensions << "ext/Rakefile"
+  spec.add_runtime_dependency "thermite", "~> 0"
 end

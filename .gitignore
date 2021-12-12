@@ -1,17 +1,22 @@
 /.bundle/
+/target/
 /.yardoc
+/Gemfile.lock
 /_yardoc/
 /coverage/
 /doc/
+/log/
 /pkg/
 /spec/reports/
 /tmp/
-
-# rspec failure tracking
-.rspec_status
-
-
-# Added by cargo
-
-/target
-Cargo.lock
+mkmf.log
+**/*.swp
+**/*.gem
+.idea
+/rubyspec_temp/
+*.dll
+*.dylib
+*.so
+.ruby-version
+/tags
+spec/ruby_spec/*

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "swiss_village_registery"
 
 RSpec.configure do |config|
